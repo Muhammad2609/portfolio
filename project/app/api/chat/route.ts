@@ -10,7 +10,7 @@ if (!apiKey) {
 }
 
 const genAI = new GoogleGenerativeAI(apiKey);
-const model = genAI.getGenerativeModel({ model: "gemini-pro" }); // Changed to gemini-pro as it's more stable
+const model = genAI.getGenerativeModel({ model: "gemini-pro" }); 
 
 export async function POST(request: Request) {
   try {

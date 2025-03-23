@@ -46,13 +46,8 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ 
       message: 'Email sent successfully',
-<<<<<<< HEAD
       adminEmailId: adminEmailResponse.data?.id,
       userEmailId: userEmailResponse.data?.id
-=======
-      adminEmailId: adminEmailResponse.id,
-      userEmailId: userEmailResponse.id
->>>>>>> f36de6f9cb3d60f7308ddac1abe7213d3ee197b7
     });
   } catch (error) {
     console.error('Error in API route:', error);
