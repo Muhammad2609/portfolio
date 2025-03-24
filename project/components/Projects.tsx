@@ -25,7 +25,7 @@ export function Projects() {
         "Developed a responsive appointment booking platform for oxygen therapy clinics. Patients can book sessions online with real-time availability and receive automated confirmations. Built using HTML, CSS, JavaScript, and Node.js, with API integration to manage data flow and booking logic.",
       tech: ["HTML", "CSS", "JavaScript", "Node.js", "API Management"],
       github: "https://github.com/Muhammad2609/oxyheal",
-      live: "https://oxyheal.vercel.app/",
+      live: "/videos/oxyheal-demo.mp4",
       video: "/videos/oxyheal-demo.mp4"
     }
     ,
@@ -36,7 +36,7 @@ export function Projects() {
         "Created a Java-based platform shooter game featuring multiple levels, enemies, health bars, and interactive mechanics. Used object-oriented programming to handle gameplay logic, and the CityEngine library to enhance visuals and physics. Designed to deliver an immersive retro-style experience.",
       tech: ["Java", "CityEngine", "Game Development", "OOP"],
       github: "https://github.com/Muhammad2609/mario-game",
-      live: "https://github.com/Muhammad2609/mario-game",
+      live: "/videos/mario-game",
       video: "/videos/mario-game.mp4"
     },
     {
