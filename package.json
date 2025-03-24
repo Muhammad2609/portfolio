@@ -1,8 +1,5 @@
 {
   "name": "portfolio-root",
   "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "vercel-build": "cd project && npm install && npm run build"
-  }
+  "private": true
 }
