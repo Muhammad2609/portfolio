@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend('re_j1s4M13t_MHcVaFgcd8dBbMgfxJDRPxDz');
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(request: Request) {
   try {
@@ -12,8 +12,8 @@ export async function POST(request: Request) {
 
     // Send email to admin
     const adminEmailResponse = await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: 'Muh4mm4d2609@gmail.com',
+      from: process.env.EMAIL_FROM || 'onboarding@resend.dev',
+      to: process.env.ADMIN_EMAIL || 'Muh4mm4d2609@gmail.com',
       subject: `New Contact Form Submission${requestCV ? ' (CV Requested)' : ''}`,
       html: `
         <h3>New Contact Form Submission</h3>
@@ -27,7 +27,7 @@ export async function POST(request: Request) {
 
     // Send confirmation email to user
     const userEmailResponse = await resend.emails.send({
-      from: 'onboarding@resend.dev',
+      from: process.env.EMAIL_FROM || 'onboarding@resend.dev',
       to: email,
       subject: 'Thank you for your message',
       html: `
