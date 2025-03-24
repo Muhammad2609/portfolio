@@ -2,5 +2,6 @@
   "framework": "nextjs",
   "buildCommand": "cd project && npm install && npm run build",
   "outputDirectory": "project/.next",
-  "installCommand": "cd project && npm install"
+  "installCommand": "cd project && npm install",
+  "rootDirectory": "project"
 } 
