@@ -1,9 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "project/package.json",
-      "use": "@vercel/next"
-    }
-  ]
+  "framework": "nextjs",
+  "rootDirectory": "project"
 }
