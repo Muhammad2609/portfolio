@@ -79,7 +79,7 @@ export function Chatbot() {
         const prompt = aiPrompt(input);
         
         const result = await model.generateContent({
-          contents: [{ parts: [{ text: prompt }] }],
+          contents: [{ role: "user", parts: [{ text: prompt }] }],
           generationConfig: {
             maxOutputTokens: 1000,
             temperature: 0.7,
