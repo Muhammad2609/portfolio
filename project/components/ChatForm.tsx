@@ -7,7 +7,7 @@ import { Input } from "./ui/input";
 
 interface ChatFormProps {
   chatHistory: Array<{ role: string; text: string }>;
-  setChatHistory: (history: Array<{ role: string; text: string }>) => void;
+  setChatHistory: React.Dispatch<React.SetStateAction<Array<{ role: string; text: string }>>>;
   generateBotResponse: (history: Array<{ role: string; text: string }>) => void;
   loading: boolean;
   onClearChat: () => void;
@@ -34,7 +34,7 @@ export function ChatForm({
       inputRef.current.value = "";
     }
 
-    setChatHistory((history) => [
+    setChatHistory((history: Array<{ role: string; text: string }>) => [
       ...history,
       { role: "user", text: userMessage },
     ]);
