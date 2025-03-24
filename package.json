@@ -1,5 +1,17 @@
 {
+  "name": "portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cd project && npm run dev",
+    "build": "cd project && npm run build",
+    "start": "cd project && npm run start",
+    "lint": "cd project && npm run lint",
+    "vercel-build": "cd project && npm install && npm run build"
+  },
   "dependencies": {
-    "@google/generative-ai": "^0.24.0"
+    "next": "13.5.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   }
 }
